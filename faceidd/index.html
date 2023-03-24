@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FaceID ile Oturum Kontrolü</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <div style="text-align:center;">
+      <a href="index.html" class="anasayfabuton">AnaSayfa</a>
+      <a href="duygu.html" class="duygukontrol">Duygu Kontrolü</a>
+    </div>
+
+    <div class="container" id="appContainer">
+      <div class="video-container" id="videoContainer">
+        <video id="video" width="500" height="300" autoplay muted></video>
+        <span id="faceIDResult"></span>
+      </div>
+
+      <div class="login-container face-id-active" id="loginContainer">
+        <div class="button-container w-100">
+          <button id="faceIdButton">
+            <i class="fa fa-camera"></i>
+            <span id="face-id-button-text">FaceID Kullan</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="result" id="faceIDResult"></div>
+
+      <p id="login-time"></p>
+
+      <div class="footer">
+        <span>FaceID ile Oturum Kontrolü</span>
+      </div>
+    </div>
+    <script defer src="/assets/js/face-api.min.js"></script>
+    <script defer src="/assets/js/app.js"></script>
+  </body>
+</html>
